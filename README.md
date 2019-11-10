@@ -1,4 +1,10 @@
 # README
+## usersテーブル
+|column|Type|Options|
+|------|----|-------|
+|name|string|null: false|
+|email|string|null: false|
+|password|string|null: false|
 ### Association
 - has_many :messages
 - has_many :users_groups
