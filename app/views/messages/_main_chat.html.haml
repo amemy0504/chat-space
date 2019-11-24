@@ -1,28 +1,27 @@
-.wrapper
-  .chat-main
-    .main-header
-      .main-header__left-box
-        .main-header__left-box__current-group
-          test
-        .main-header__left-box__member-list
-          Member:
-      .main-header__edit-btn
-        Edit
-    .messages
-      .message
-        .message__upper-info
-          .message__upper-info__talker
-            shouya
-          .message__upper-info__date
-            2019/11/23
-        .message__text
-          this is a first message
+.chat-main
+  .main-header
+    .main-header__left-box
+      .main-header__left-box__current-group
+        test
+      .main-header__left-box__member-list
+        Member:
+    .main-header__edit-btn
+      Edit
+  .messages
+    .message
+      .message__upper-info
+        .message__upper-info__talker
+          shouya
+        .message__upper-info__date
+          2019/11/23
+      .message__text
+        this is a first message
 
-    .form
-      .new-message
-        .input-box
-          %input{name: "input-box__text", placeholder: "type a message", type: "text", value: "", class: "input-box__text"}
-          %label{class: "input-box__image"}
-            = icon('fas','image')
-            %input{type: "file"}/
-        %input{type: "submit",class: "submit-btn"}/
+  .form
+    %form{class: "new-message"}
+      .input-box
+        %input{name: "input-box__text", placeholder: "type a message", type: "text", value: "", class: "input-box__text"}
+        %label{class: "input-box__image"}
+          = icon('fas','image')
+          %input{type: "file", class: "input-box__image__file"}
+      %input{type: "submit",class: "submit-btn"}/
