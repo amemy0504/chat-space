@@ -5,14 +5,16 @@
         = current_user.name
       .side-header__box__menu
         .side-header__box__menu__new-group
-        =link_to   class:"side-header__box__menu__new-group" do
+        =link_to   new_group_path,class:"side-header__box__menu__new-group" do
           = icon('far','edit')
         .side-header__box__menu__edit-user
-        = link_to  edit_user_path(current_user) do
+        = link_to  edit_user_path(current_user), class: "side-header__box__menu__edit-user" do
           = icon('fas', 'cog')
   .groups
-    .group
-      .group__group-name
-        sample
-      .group__latest-message
-        Good bye world 
+    - current_user.groups.each do |group|
+      .group
+        = link_to group_messages_path(group) do
+          .group__name
+            = group.name
+          .group__message
+            メッセージはまだありません。 

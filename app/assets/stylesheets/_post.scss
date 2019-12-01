@@ -43,16 +43,18 @@
       height: calc(100vh - 100px);
       padding: 20px 20px 0px;
       overflow: scroll;
-
+      
       .group{
         margin-bottom: 40px;
       
-        &__group-name{
+        &__name{
           font-size: 15px;
           margin-bottom: 5px;
+          color: white;
                     }
-        &__latest-message{
+        &__message{
           font-size: 11px;
+          color: white;
                         }
             }
           }
