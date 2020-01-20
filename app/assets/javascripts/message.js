@@ -101,7 +101,7 @@ $(function(){
     }
     })
     .fail(function() {
-      console.log('error');
+      alert("エラー");
     });
   };
   if (document.location.href.match(/\/groups\/\d+\/messages/)) {
