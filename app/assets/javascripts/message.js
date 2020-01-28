@@ -1,5 +1,5 @@
 $(function(){
-  function buildHTML(message){
+  var buildHTML = function(message) {
     if (message.content && message.image) {
     var html = 
     ` <div class="message" data-message-id=${message.id}>
